@@ -51,8 +51,8 @@
         <a href="#scan">The scan</a>
         <a href="#inside">Inside Glovia</a>
       </nav>
-      <a class="btn btn--sm" href="#get">
-        Get Glovia
+      <a class="btn btn--sm" href="#notify">
+        Get notified
         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
     </div>
@@ -60,7 +60,9 @@
 
   <main id="main">
     <!-- ============ 1. HERO ============ -->
-    <section class="hero bg-cream" id="top" aria-labelledby="hero-title">
+    <section class="hero bg-cream grain" id="top" aria-labelledby="hero-title">
+      <div class="breath" aria-hidden="true"><span></span><span></span><span></span></div>
+
       <div class="container hero__grid">
         <div class="hero__copy">
           <span class="pill fade-in" style="--d:60ms"><span class="pill__dot" aria-hidden="true"></span>Coming soon to iOS &amp; Android</span>
@@ -72,15 +74,15 @@
             <span class="w" aria-hidden="true"><span style="--i:3">companion</span></span>
           </h1>
 
-          <p class="hero__tagline fade-in" style="--d:520ms">
+          <p class="hero__tagline fade-in" style="--d:620ms">
             <span>Scan.</span><span>Understand.</span><span class="grad-text">Glow.</span>
           </p>
 
-          <p class="lead fade-in" style="--d:640ms">
+          <p class="lead fade-in" style="--d:740ms">
             Glovia reads your skin, face and posture in seconds — then builds gentle, personal routines that fit the life you already have.
           </p>
 
-          <div class="stores fade-in" id="get" style="--d:780ms">
+          <div class="stores fade-in" id="get" style="--d:880ms">
             <span class="stores__label">Coming soon</span>
             <div class="stores__row">
               <span class="badge" title="Coming soon to the App Store">
@@ -101,72 +103,109 @@
             <div class="ring" style="--r:100%;--o:.3;--t:110s;--w:1px"></div>
           </div>
 
-          <div class="phone" role="img" aria-label="Glovia app home screen showing a glow score of 82 and today's routines">
-            <div class="phone__screen">
-              <div class="phone__island"></div>
-              <!-- Real screenshot goes here:
-                   <img class="phone__shot" src="assets/img/screen-home.webp" alt="" width="1179" height="2556"> -->
-              <div class="ui" aria-hidden="true">
-                <div class="ui__status"><span>9:41</span><i></i></div>
-                <div>
-                  <div class="ui__hello">Good morning, Mia</div>
-                  <div class="ui__title">Your glow today</div>
+          <div class="parallax" data-parallax="-0.12">
+            <div class="float">
+              <div class="phone" role="img" aria-label="Glovia app home screen showing a glow score of 82 and today's routines">
+                <div class="phone__screen">
+                  <div class="phone__island"></div>
+                  <!-- Real screenshot goes here:
+                       <img class="phone__shot" src="assets/img/screen-home.webp" alt="" width="1179" height="2556"> -->
+                  <div class="ui" aria-hidden="true">
+                    <div class="ui__status"><span>9:41</span><i></i></div>
+                    <div>
+                      <div class="ui__hello">Good morning, Mia</div>
+                      <div class="ui__title">Your glow today</div>
+                    </div>
+                    <div class="ui__score"><div><b>82</b><small>Glow score</small></div></div>
+                    <div class="ui__card">
+                      <span class="ui__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="#0A0A0A" stroke-width="1.6"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+                      <div><strong>Morning routine</strong><span>4 steps · 6 min</span></div>
+                      <i class="ui__check is-done"></i>
+                    </div>
+                    <div class="ui__card">
+                      <span class="ui__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4c3.9 0 7 3.1 7 7 0 4.6-3.6 9-7 9s-7-4.4-7-9c0-3.9 3.1-7 7-7Z" stroke="#0A0A0A" stroke-width="1.6"/><path d="M9.2 14.6c1.6 1.2 4 1.2 5.6 0" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+                      <div><strong>Face yoga · Jaw</strong><span>Guided · 5 min</span></div>
+                      <i class="ui__check"></i>
+                    </div>
+                    <div class="ui__nav"><i></i><i></i><i></i><i></i></div>
+                  </div>
                 </div>
-                <div class="ui__score"><div><b>82</b><small>Glow score</small></div></div>
-                <div class="ui__card">
-                  <span class="ui__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="#0A0A0A" stroke-width="1.6"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-                  <div><strong>Morning routine</strong><span>4 steps · 6 min</span></div>
-                  <i class="ui__check is-done"></i>
-                </div>
-                <div class="ui__card">
-                  <span class="ui__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4c3.9 0 7 3.1 7 7 0 4.6-3.6 9-7 9s-7-4.4-7-9c0-3.9 3.1-7 7-7Z" stroke="#0A0A0A" stroke-width="1.6"/><path d="M9.2 14.6c1.6 1.2 4 1.2 5.6 0" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-                  <div><strong>Face yoga · Jaw</strong><span>Guided · 5 min</span></div>
-                  <i class="ui__check"></i>
-                </div>
-                <div class="ui__nav"><i></i><i></i><i></i><i></i></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <a class="scroll-cue" href="#stats" aria-label="Scroll to learn more">
+        <span>Scroll</span>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats" id="stats" aria-label="Glovia in numbers">
+      <div class="container">
+        <ul class="stats__grid">
+          <li class="stat" data-reveal style="--d:0ms">
+            <span class="stat__num"><span class="grad-text" data-count="120" data-suffix="+">120+</span></span>
+            <span class="stat__label">guided exercises</span>
+          </li>
+          <li class="stat" data-reveal style="--d:100ms">
+            <span class="stat__num"><span class="grad-text" data-count="25">25</span></span>
+            <span class="stat__label">face yoga illustrations</span>
+          </li>
+          <li class="stat" data-reveal style="--d:200ms">
+            <span class="stat__num"><span class="grad-text" data-count="5">5</span></span>
+            <span class="stat__label">languages the AI speaks</span>
+          </li>
+          <li class="stat" data-reveal style="--d:300ms">
+            <span class="stat__num"><span class="grad-text" data-count="100" data-suffix="%">100%</span></span>
+            <span class="stat__label">ad-free. Your data is never sold.</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- ============ 2. HOW IT WORKS ============ -->
-    <section class="section bg-paper" id="how" aria-labelledby="how-title">
+    <section class="section bg-cream grain" id="how" aria-labelledby="how-title">
       <div class="container">
         <div class="section-head" data-reveal>
           <span class="eyebrow">How it works</span>
           <h2 class="h2" id="how-title">Three quiet steps to a routine that's truly yours.</h2>
         </div>
 
-        <ol class="steps">
-          <li class="step" data-reveal style="--d:0ms">
+        <div class="steps" data-progress>
+          <span class="steps__track" aria-hidden="true"><span class="steps__fill"></span></span>
+          <div class="step" data-reveal style="--d:0ms">
+            <span class="step__node" aria-hidden="true"></span>
             <span class="step__num"><span class="grad-text">01</span></span>
             <h3 class="step__title">Scan</h3>
             <p>A short, guided scan of your skin, face and posture. Good light, thirty seconds, no studio required.</p>
-          </li>
-          <li class="step" data-reveal style="--d:140ms">
+          </div>
+          <div class="step" data-reveal style="--d:150ms">
+            <span class="step__node" aria-hidden="true"></span>
             <span class="step__num"><span class="grad-text">02</span></span>
             <h3 class="step__title">Understand</h3>
             <p>Glovia explains what it sees in plain, kind language — what's working, and where a little care goes a long way.</p>
-          </li>
-          <li class="step" data-reveal style="--d:280ms">
+          </div>
+          <div class="step" data-reveal style="--d:300ms">
+            <span class="step__node" aria-hidden="true"></span>
             <span class="step__num"><span class="grad-text">03</span></span>
             <h3 class="step__title">Glow</h3>
             <p>Personal routines, workouts and face yoga, paced to your day — and gentle progress you can actually see.</p>
-          </li>
-        </ol>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============ 3. THE SCAN ============ -->
-    <section class="section bg-cream" id="scan" aria-labelledby="scan-title" style="overflow:clip">
+    <section class="section bg-paper" id="scan" aria-labelledby="scan-title" style="overflow:clip">
       <div class="container split">
         <div>
           <div class="section-head" data-reveal>
             <span class="eyebrow">The scan</span>
             <h2 class="h2" id="scan-title">Thirty seconds. A clear, kind picture.</h2>
-            <p class="lead">On-device guidance helps you frame the shot; Glovia's AI does the rest — reading the details that shape your routine.</p>
+            <p class="lead">Guidance on screen helps you frame the shot; Glovia's AI does the rest — reading the details that shape your routine.</p>
           </div>
 
           <ul class="points">
@@ -193,21 +232,33 @@
             <div class="ring" style="--r:70%;--t:70s"></div>
             <div class="ring" style="--r:92%;--o:.4;--t:95s;--w:1px"></div>
           </div>
-          <div class="phone" role="img" aria-label="Glovia scan screen analysing a face, showing hydration, texture and tension results">
+          <div class="phone scan-demo" data-live role="img" aria-label="Glovia scan screen: a ring draws around the face while results for hydration, texture and tension appear">
             <div class="phone__screen">
               <div class="phone__island"></div>
               <!-- Real screenshot goes here:
                    <img class="phone__shot" src="assets/img/screen-scan.webp" alt="" width="1179" height="2556" loading="lazy"> -->
               <div class="scan-ui" aria-hidden="true">
-                <img src="assets/img/faceyoga-480.webp" width="480" height="480" alt="" loading="lazy" decoding="async">
-                <div class="scan-ui__label">Scanning</div>
-                <div class="scan-ui__frame">
-                  <div class="scan-ui__beam"></div>
-                  <span class="scan-ui__dot" style="left:30%;top:44%"></span>
-                  <span class="scan-ui__dot" style="left:66%;top:42%"></span>
-                  <span class="scan-ui__dot" style="left:48%;top:66%"></span>
-                  <span class="scan-ui__dot" style="left:24%;top:70%"></span>
-                </div>
+                <div class="scan-ui__label"><span class="is-scanning">Scanning…</span><span class="is-done">Analysis ready</span></div>
+                <img class="scan-ui__face" src="assets/img/faceyoga-480.webp" width="480" height="480" alt="" loading="lazy" decoding="async">
+                <svg class="scan-ring" viewBox="0 0 200 200" fill="none">
+                  <defs>
+                    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#E8D5B7"/>
+                      <stop offset=".55" stop-color="#E5B8B0"/>
+                      <stop offset="1" stop-color="#EE8A72"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="scan-ring__track" cx="100" cy="100" r="92" stroke-width="2"/>
+                  <g class="scan-ring__tick" stroke-width="1.5" stroke-linecap="round">
+                    <path d="M100 2v6M100 192v6M2 100h6M192 100h6"/>
+                  </g>
+                  <circle class="scan-ring__arc" cx="100" cy="100" r="92" pathLength="100" stroke="url(#ringGrad)" stroke-width="3.5" stroke-linecap="round" transform="rotate(-90 100 100)"/>
+                  <g class="scan-ring__head">
+                    <circle cx="29.1" cy="41.4" r="8" fill="#EE8A72" fill-opacity=".18"/>
+                    <circle cx="29.1" cy="41.4" r="4" fill="#EE8A72"/>
+                  </g>
+                </svg>
+                <div class="scan-beam"></div>
                 <div class="scan-ui__chips">
                   <div class="chip"><strong>Hydration</strong><span>Balanced</span></div>
                   <div class="chip"><strong>Texture</strong><span>Smooth</span></div>
@@ -221,7 +272,8 @@
     </section>
 
     <!-- ============ 4. INSIDE GLOVIA ============ -->
-    <section class="section bg-paper" id="inside" aria-labelledby="inside-title">
+    <section class="section bg-cream grain inside" id="inside" aria-labelledby="inside-title">
+      <div class="inside__blobs" aria-hidden="true"><span></span><span></span><span></span></div>
       <div class="container">
         <div class="section-head" data-reveal>
           <span class="eyebrow">Inside Glovia</span>
@@ -231,7 +283,17 @@
         <div class="bento">
           <article class="card card--routines" data-reveal style="--d:0ms">
             <div class="card__body">
-              <span class="card__tag">Routines</span>
+              <div class="card__top">
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="17" cy="19" r="6" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M17 8.5v2.5M17 27v2.5M6.5 19H9M25 19h2.5M9.6 11.6l1.8 1.8M22.6 24.6l1.8 1.8M9.6 26.4l1.8-1.8M22.6 13.4l1.8-1.8" stroke="#EE8A72" stroke-width="1.3"/>
+                    <path d="M40 31.5a8.5 8.5 0 1 1-10.2-10.7 6.8 6.8 0 0 0 10.2 10.7Z" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M37.5 18.5l.6 1.4 1.4.6-1.4.6-.6 1.4-.6-1.4-1.4-.6 1.4-.6z" fill="#EE8A72"/>
+                  </svg>
+                </span>
+                <span class="card__tag">Routines</span>
+              </div>
               <h3 class="h3">Morning &amp; evening, made for you.</h3>
               <p>Step-by-step skincare built around what your scan actually found — not what's trending.</p>
             </div>
@@ -261,7 +323,19 @@
                    width="640" height="360" alt="Woman holding a forearm plank on a pink mat in a bright, calm room" loading="lazy" decoding="async">
             </div>
             <div class="card__body">
-              <span class="card__tag">Workouts</span>
+              <div class="card__top">
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="35.5" cy="16.5" r="3.2" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M9 30.5c6-2.6 13.5-5.8 21.5-9.2" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M30.5 21.3 31 30.5h5.5" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M9 30.5 7.5 31" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M5 34.5h38" stroke="#EE8A72" stroke-width="1.3"/>
+                    <path d="M14 38.5h20" stroke="#EE8A72" stroke-width="1.3" opacity=".45"/>
+                  </svg>
+                </span>
+                <span class="card__tag">Workouts</span>
+              </div>
               <h3 class="h3">Posture-first training.</h3>
               <p>Home or gym plans for core, back and strength — shaped by how you stand today.</p>
             </div>
@@ -269,7 +343,19 @@
 
           <article class="card card--yoga" data-reveal style="--d:0ms">
             <div class="card__body">
-              <span class="card__tag">Face Yoga</span>
+              <div class="card__top">
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M24 7.5c7 0 11.5 5.6 11.5 13 0 9-6.2 17.5-11.5 17.5S12.5 29.5 12.5 20.5c0-7.4 4.5-13 11.5-13Z" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M17.8 20.5c1.3 1 2.9 1 4.2 0M26 20.5c1.3 1 2.9 1 4.2 0" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M24 22.5v4.2l-1.4.8" stroke="#0A0A0A" stroke-width="1.1"/>
+                    <path d="M20.8 31c2 1.3 4.4 1.3 6.4 0" stroke="#EE8A72" stroke-width="1.5"/>
+                    <circle cx="17" cy="26.5" r="2.2" fill="#EE8A72" fill-opacity=".28"/>
+                    <circle cx="31" cy="26.5" r="2.2" fill="#EE8A72" fill-opacity=".28"/>
+                  </svg>
+                </span>
+                <span class="card__tag">Face Yoga</span>
+              </div>
               <h3 class="h3">Five guided minutes.</h3>
               <p>Soft, illustrated sessions for jaw, cheeks and brow — release tension, wake up your glow.</p>
             </div>
@@ -283,7 +369,17 @@
 
           <article class="card card--progress" data-reveal style="--d:120ms">
             <div class="card__body">
-              <span class="card__tag">Progress</span>
+              <div class="card__top">
+                <span class="card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="24" cy="24" r="15" stroke="#0A0A0A" stroke-opacity=".14" stroke-width="1.3"/>
+                    <path d="M24 9a15 15 0 1 1-14.3 19.6" stroke="#EE8A72" stroke-width="1.6"/>
+                    <path d="M17 29l4.5-4.5 3.5 3 6-7.5" stroke="#0A0A0A" stroke-width="1.3"/>
+                    <path d="M27.5 20h3.5v3.5" stroke="#0A0A0A" stroke-width="1.3"/>
+                  </svg>
+                </span>
+                <span class="card__tag">Progress</span>
+              </div>
               <h3 class="h3">Gentle progress, over weeks.</h3>
               <p>Rescan whenever you like and watch the small, steady changes add up — no pressure, just perspective.</p>
             </div>
@@ -317,31 +413,111 @@
     </section>
 
     <!-- ============ 5. PHILOSOPHY ============ -->
-    <section class="philo bg-cream" id="philosophy" aria-labelledby="philo-title" data-reveal-group>
+    <section class="philo bg-paper" id="philosophy" aria-labelledby="philo-title" data-philo>
+      <div class="philo__stage">
+        <div class="aura" aria-hidden="true">
+          <div class="aura__glow"></div>
+          <div class="ring" style="--r:62%;--o:.55;--t:90s"></div>
+          <div class="ring" style="--r:80%;--o:.32;--t:120s"></div>
+          <div class="ring" style="--r:98%;--o:.18;--t:150s;--w:1px"></div>
+        </div>
+        <div class="container philo__inner">
+          <span class="eyebrow">Our philosophy</span>
+          <h2 class="philo__title" id="philo-title">
+            <span class="pw">Care,</span>
+            <span class="pw">not</span>
+            <span class="pw grad-text">judgment.</span>
+          </h2>
+          <ul class="philo__nots">
+            <li>No calories.</li>
+            <li>No comparisons.</li>
+            <li>No pressure.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section bg-cream grain" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head section-head--center" data-reveal>
+          <span class="eyebrow">Questions</span>
+          <h2 class="h2" id="faq-title">Good to know.</h2>
+        </div>
+
+        <div class="faq__list" data-reveal style="--d:120ms">
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-1" id="faq-1-btn">Is Glovia medical advice?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-1" role="region" aria-labelledby="faq-1-btn" data-closed><div>
+              <p>No — Glovia is for wellness and self-care only. Its analyses are informational: not a diagnosis, not medical advice, and not a substitute for a professional. For any skin or health concern, please see a doctor or dermatologist.</p>
+            </div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-2" id="faq-2-btn">How private are my photos?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-2" role="region" aria-labelledby="faq-2-btn" data-closed><div>
+              <p>Your photos are processed by AI for one purpose only — creating your analysis and program. They're linked only to your account, never made public, and stored on servers in the EU (Frankfurt). We never sell your data and never show ads. Delete your account any time in Settings → Profile and your photos go with it. The full details are in our <a href="https://astrexai.github.io/glovia-legal/privacy.html">Privacy Policy</a>.</p>
+            </div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-3" id="faq-3-btn">Which languages does Glovia speak?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-3" role="region" aria-labelledby="faq-3-btn" data-closed><div>
+              <p>Glovia's AI writes your analyses and programs in five languages: English, Bulgarian, German, French and Spanish. The app itself is available in English and Bulgarian.</p>
+            </div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-4" id="faq-4-btn">Do I need any equipment?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-4" role="region" aria-labelledby="faq-4-btn" data-closed><div>
+              <p>Just your phone. Face yoga needs nothing at all, and workouts come in home and gym versions — so you can start wherever you are.</p>
+            </div></div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__q"><button class="faq__btn" type="button" aria-expanded="false" aria-controls="faq-5" id="faq-5-btn">When is it available?<span class="faq__icon" aria-hidden="true"></span></button></h3>
+            <div class="faq__panel" id="faq-5" role="region" aria-labelledby="faq-5-btn" data-closed><div>
+              <p>Very soon, on the App Store and Google Play. Leave your email below and we'll write to you once — on launch day.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="section bg-paper cta" id="notify" aria-labelledby="cta-title">
       <div class="aura" aria-hidden="true">
         <div class="aura__glow"></div>
-        <div class="ring" style="--r:62%;--o:.55;--t:90s"></div>
-        <div class="ring" style="--r:80%;--o:.32;--t:120s"></div>
-        <div class="ring" style="--r:98%;--o:.18;--t:150s;--w:1px"></div>
+        <div class="ring" style="--r:64%;--o:.5;--t:80s"></div>
+        <div class="ring" style="--r:90%;--o:.25;--t:110s;--w:1px"></div>
       </div>
-      <div class="container philo__inner">
-        <span class="eyebrow" data-reveal>Our philosophy</span>
-        <h2 class="philo__title" id="philo-title" aria-label="Care, not judgment.">
-          <span class="line" aria-hidden="true">
-            <span class="w"><span style="--i:0">Care,</span></span>
-            <span class="w"><span style="--i:1">not</span></span>
-          </span>
-          <span class="line" aria-hidden="true">
-            <span class="w"><span style="--i:2" class="grad-text">judgment.</span></span>
-          </span>
-        </h2>
-        <p class="lead" data-reveal style="--d:500ms">No before-and-after shaming. No impossible standards. Glovia meets you exactly where you are — and helps you take one kind step at a time.</p>
+      <div class="container cta__inner">
+        <span class="eyebrow" data-reveal>Almost here</span>
+        <h2 class="h2" id="cta-title" data-reveal style="--d:80ms">Your glow journey starts soon.</h2>
+        <p class="lead" data-reveal style="--d:160ms">Be the first to know when Glovia lands.</p>
+
+        <form class="notify" action="mailto:info@astrextech.com?subject=Notify%20me%20when%20Glovia%20launches" method="post" enctype="text/plain" data-notify data-reveal style="--d:240ms">
+          <label for="notify-email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Your email</label>
+          <input id="notify-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn" type="submit">
+            Notify me
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+        <p class="cta__fine" data-reveal style="--d:300ms">Opens your email app. One note on launch day — nothing else.</p>
+
+        <div class="stores" data-reveal style="--d:360ms">
+          <div class="stores__row">
+            <span class="badge" title="Coming soon to the App Store">
+              <img src="assets/img/app-store.svg" width="155" height="46" alt="Download on the App Store — coming soon" loading="lazy">
+            </span>
+            <span class="badge" title="Coming soon to Google Play">
+              <img src="assets/img/google-play.svg" width="155" height="46" alt="Get it on Google Play — coming soon" loading="lazy">
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ 6. FOOTER ============ -->
-  <footer class="footer">
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer grain">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
@@ -349,28 +525,40 @@
             <img src="assets/img/logo-mark.png" width="30" height="30" alt="" loading="lazy">
             Glovia
           </a>
-          <p>Your AI self-care companion. Scan, understand, glow — with care, not judgment.</p>
+          <p class="footer__slogan">Care, not judgment.</p>
+          <p>Your AI self-care companion for skin, face and posture.</p>
         </div>
-        <div class="footer__cols">
-          <nav aria-labelledby="f-legal">
+
+        <div class="footer__links">
+          <nav class="footer__col" aria-labelledby="f-explore">
+            <h2 id="f-explore">Explore</h2>
+            <ul>
+              <li><a href="#how">How it works</a></li>
+              <li><a href="#scan">The scan</a></li>
+              <li><a href="#inside">Inside Glovia</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+          <nav class="footer__col" aria-labelledby="f-legal">
             <h2 id="f-legal">Legal</h2>
             <ul>
               <li><a href="https://astrexai.github.io/glovia-legal/privacy.html">Privacy Policy</a></li>
               <li><a href="https://astrexai.github.io/glovia-legal/terms.html">Terms of Use</a></li>
             </ul>
           </nav>
-          <nav aria-labelledby="f-contact">
-            <h2 id="f-contact">Contact</h2>
-            <ul>
-              <li><a href="mailto:info@astrextech.com">info@astrextech.com</a></li>
-              <li><a href="#top">Back to top ↑</a></li>
-            </ul>
-          </nav>
+        </div>
+
+        <div class="footer__col">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:info@astrextech.com">info@astrextech.com</a></li>
+            <li><a href="#notify">Get notified at launch</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer__bottom">
         <span>© 2026 Astrex Tech. All rights reserved.</span>
-        <span>Made with care.</span>
+        <a href="#top">Back to top ↑</a>
       </div>
     </div>
   </footer>
