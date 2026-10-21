@@ -591,7 +591,11 @@ button { font: inherit; color: inherit; }
 .card:hover .card__media img { transform: scale(1.03); }
 .card--photo .card__media { order: -1; aspect-ratio: 16 / 10; overflow: hidden; }
 .card--yoga .card__media { display: grid; place-items: center; padding: 0 1.5rem; }
-.card--yoga .card__media img { width: min(70%, 300px); height: auto; mix-blend-mode: multiply; }
+.card--yoga .card__media img {
+  width: min(74%, 320px); height: auto; mix-blend-mode: multiply;
+  -webkit-mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
+  mask-image: radial-gradient(closest-side, #000 72%, transparent 100%);
+}
 
 .routine { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; padding: 0 clamp(1.5rem, 1.1rem + 1.4vw, 2.25rem) clamp(1.5rem, 1.1rem + 1.4vw, 2.25rem); }
 .routine__col { border-radius: 20px; padding: 1.1rem 1.1rem 1.25rem; background: var(--paper); box-shadow: var(--shadow-1); }
