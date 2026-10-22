@@ -967,6 +967,8 @@ button { font: inherit; color: inherit; }
   .ambient span:nth-child(1) { animation: drift-a 70s ease-in-out infinite alternate; }
   .ambient span:nth-child(2) { animation: drift-b 86s ease-in-out infinite alternate; }
   .ambient span:nth-child(3) { animation: drift-c 62s ease-in-out infinite alternate; }
+  /* The background starts drifting once the visitor engages: calm on arrival, alive after. */
+  .js:not(.is-awake) .ambient span { animation-play-state: paused; }
 
   /* Ring first, then words */
   .gring__arc { animation: draw 1.2s var(--ease-out) .15s both; }

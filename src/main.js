@@ -22,6 +22,13 @@
     document.title = document.hidden ? 'Come back and glow ✨' : baseTitle;
   });
 
+  // ---------- Wake the living background on first interaction ----------
+  var wake = function () {
+    doc.classList.add('is-awake');
+    ['scroll', 'pointermove', 'touchstart', 'keydown'].forEach(function (t) { window.removeEventListener(t, wake); });
+  };
+  ['scroll', 'pointermove', 'touchstart', 'keydown'].forEach(function (t) { window.addEventListener(t, wake, { passive: true }); });
+
   // ---------- Reveal on scroll ----------
   var once = function (els, cls, opts) {
     if (!hasIO) { els.forEach(function (el) { el.classList.add(cls); }); return; }
