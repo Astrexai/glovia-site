@@ -753,14 +753,14 @@ button { font: inherit; color: inherit; }
   .breath span:nth-child(3) { animation: breathe-c 8s ease-in-out infinite alternate; }
   .hero__title .w > span {
     transform: translateY(108%);
-    animation: rise 1s var(--ease-out) forwards;
-    animation-delay: calc(600ms + var(--i, 0) * 100ms);
+    animation: rise .9s var(--ease-out) forwards;
+    animation-delay: calc(380ms + var(--i, 0) * 90ms);
   }
-  .fade-in { opacity: 0; transform: translateY(14px); animation: fade 1s var(--ease-out) forwards; animation-delay: var(--d, 0ms); }
-  .hero__visual .float { animation: phone-in 1.2s var(--ease-out) .2s both, float 7s ease-in-out 1.6s infinite alternate; }
+  .fade-in { opacity: 0; transform: translateY(14px); animation: fade .8s var(--ease-out) forwards; animation-delay: var(--d, 0ms); }
+  .hero__visual .float { animation: phone-in 1s var(--ease-out) .1s both, float 7s ease-in-out 1.3s infinite alternate; }
   .hero__visual .aura { animation: aura 2s var(--ease-out) .1s both; }
   .scroll-cue__line::after { animation: cue 2.2s var(--ease-io) infinite; }
-  .scroll-cue { animation: cue-in 1s var(--ease-out) 2.2s both; }
+  .scroll-cue { animation: cue-in 1s var(--ease-out) 1.6s both; }
 
   /* Scroll reveal (JS only, so content never hides without it) */
   .js [data-reveal] {
@@ -962,7 +962,7 @@ button { font: inherit; color: inherit; }
   .js .intro {
     display: block; position: fixed; inset: -5%; z-index: 80; pointer-events: none;
     background: radial-gradient(circle at 50% 45%, #FFFFFF 0%, #FFFBF4 32%, var(--cream) 72%);
-    animation: inhale .6s var(--ease-out) forwards;
+    animation: inhale .5s var(--ease-out) forwards;
   }
   .ambient span:nth-child(1) { animation: drift-a 70s ease-in-out infinite alternate; }
   .ambient span:nth-child(2) { animation: drift-b 86s ease-in-out infinite alternate; }
@@ -971,9 +971,9 @@ button { font: inherit; color: inherit; }
   .js:not(.is-awake) .ambient span { animation-play-state: paused; }
 
   /* Ring first, then words */
-  .gring__arc { animation: draw 1.2s var(--ease-out) .15s both; }
-  .gring__head { animation: pop .6s var(--ease-out) 1.2s both; transform-box: fill-box; transform-origin: center; }
-  .ui__ring-arc { animation: draw 1.2s var(--ease-out) .5s both; }
+  .gring__arc { animation: draw 1.1s var(--ease-out) .05s both; }
+  .gring__head { animation: pop .5s var(--ease-out) 1s both; transform-box: fill-box; transform-origin: center; }
+  .ui__ring-arc { animation: draw 1.1s var(--ease-out) .3s both; }
 
   .js [data-reveal] .sec-num__fill { stroke-dashoffset: 100; transition: stroke-dashoffset 1.4s var(--ease-out) .35s; }
   .js [data-reveal].is-in .sec-num__fill { stroke-dashoffset: 0; }
