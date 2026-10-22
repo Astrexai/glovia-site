@@ -12,7 +12,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Playfair Display";
+  font-family: "Playfair Italic";
   src: url("../assets/fonts/playfair-italic.woff2") format("woff2-variations"),
        url("../assets/fonts/playfair-italic.woff2") format("woff2");
   font-weight: 400 900;
@@ -49,6 +49,7 @@
   --grad-ink: linear-gradient(120deg, #B9583C 0%, #D9785C 50%, #C98A63 100%);
 
   --serif: "Playfair Display", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --serif-italic: "Playfair Italic", "Playfair Display", Georgia, serif;
   --sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
   --fs-hero: clamp(2.875rem, 1.35rem + 6.2vw, 6.25rem);
@@ -896,7 +897,7 @@ button { font: inherit; color: inherit; }
 .split__visual { grid-template-rows: auto auto; align-content: center; }
 .scan-caption {
   position: relative; z-index: 2; margin-top: 2.5rem;
-  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-family: var(--serif-italic); font-style: italic; font-weight: 400;
   font-size: clamp(1.25rem, 1.1rem + .6vw, 1.625rem); letter-spacing: -.005em;
   color: var(--ink-2); text-align: center;
 }
@@ -942,7 +943,7 @@ button { font: inherit; color: inherit; }
 .invite__inner { position: relative; z-index: 1; display: grid; gap: 1.5rem; justify-items: center; }
 .invite .h2 { font-size: clamp(2.75rem, 1.2rem + 5.4vw, 6.5rem); max-width: 15ch; line-height: 1.02; letter-spacing: -.03em; }
 .invite__line {
-  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-family: var(--serif-italic); font-style: italic; font-weight: 400;
   font-size: clamp(1.25rem, 1.1rem + .7vw, 1.75rem); line-height: 1.35;
   color: var(--ink-2); max-width: 28ch;
 }
@@ -1027,5 +1028,5 @@ button { font: inherit; color: inherit; }
 
 /* Below-the-fold sections render only when they come near: big savings on slow phones */
 @supports (content-visibility: auto) {
-  #how, #scan, #inside, #faq, .invite, .footer { content-visibility: auto; contain-intrinsic-size: auto 1000px; }
+  #scan, #inside, #faq, .invite, .footer { content-visibility: auto; contain-intrinsic-size: auto 1000px; }
 }
