@@ -92,7 +92,9 @@
     var target = id === '#top' ? document.body : document.querySelector(id);
     if (!target) return;
     ev.preventDefault();
-    var to = id === '#top' ? 0 : target.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 8;
+    // Measured every frame: sections that render lazily can change height on the way.
+    var targetY = function () { return id === '#top' ? 0 : target.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 8; };
+    var to = targetY();
     var from = window.scrollY, dist = to - from;
     var finish = function () {
       history.pushState(null, '', id);
@@ -106,7 +108,7 @@
     var step = function (t) {
       if (t0 === null) t0 = t;
       var p = clamp((t - t0) / dur, 0, 1);
-      window.scrollTo(0, from + dist * easeInOut(p));
+      window.scrollTo(0, from + (targetY() - from) * easeInOut(p));
       if (p < 1) requestAnimationFrame(step); else finish();
     };
     requestAnimationFrame(step);
@@ -178,7 +180,7 @@
 
   window.addEventListener('scroll', requestTick, { passive: true });
   window.addEventListener('resize', requestTick);
-  update();
+  requestTick();
 
   if (reduce) return; // Everything below is pure motion.
 
