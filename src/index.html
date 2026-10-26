@@ -127,34 +127,51 @@
 
           <div class="parallax" data-parallax="-0.12">
             <div class="float">
-              <div class="phone" role="img" aria-label="Glovia app home screen showing a glow score of 82 and today's routines">
+              <div class="phone" role="img" aria-label="Glovia's home screen on day one: today's mission, your habits and a prompt for your first scan">
                 <div class="phone__screen">
                   <div class="phone__island"></div>
                   <!-- Real screenshot goes here:
                        <img class="phone__shot" src="assets/img/screen-home.webp" alt="" width="1179" height="2556"> -->
-                  <div class="ui" aria-hidden="true">
+                  <div class="ui hub" aria-hidden="true">
                     <div class="ui__status"><span>9:41</span><i></i></div>
-                    <div>
-                      <div class="ui__hello">Good morning, Mia</div>
-                      <div class="ui__title">Your glow today</div>
+                    <div class="hub__bar">
+                      <span class="hub__chip"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.5c.4 2.2 3.6 3.6 3.6 7.1A3.6 3.6 0 0 1 8 12.2a3.6 3.6 0 0 1-3.6-3.6c0-1.6.9-2.6 1.6-3.3.1 1.2.7 1.9 1.4 2.1C7.2 5.5 7.4 3.4 8 1.5Z" fill="#EE8A72"/></svg>Day 1</span>
+                      <span class="hub__chip">Level 1</span>
                     </div>
-                    <div class="ui__score">
-                      <svg class="ui__ring" viewBox="0 0 100 100" fill="none">
-                        <circle class="ui__ring-track" cx="50" cy="50" r="46" stroke-width="5"/>
-                        <circle class="ui__ring-arc" cx="50" cy="50" r="46" pathLength="100" stroke="url(#gGrad)" stroke-width="5" stroke-linecap="round"/>
-                      </svg>
-                      <div><b>82</b><small>Glow score</small></div>
+                    <div class="hub__hello">
+                      <span class="hub__date" data-today>Today</span>
+                      <span class="hub__greet" data-greeting>Good morning</span>
+                      <span class="hub__sub">Let's check in with your wellness today</span>
                     </div>
-                    <div class="ui__card">
-                      <span class="ui__ic"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4" stroke="#0A0A0A" stroke-width="1.6"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-                      <div><strong>Morning routine</strong><span>4 steps · 6 min</span></div>
-                      <i class="ui__check is-done"></i>
+                    <div class="hub__card hub__score">
+                      <div class="hub__gauge">
+                        <svg class="ui__ring" viewBox="0 0 100 100" fill="none">
+                          <circle class="ui__ring-track" cx="50" cy="50" r="44" stroke-width="7"/>
+                          <circle class="ui__ring-arc hub__gauge-arc" cx="50" cy="50" r="44" pathLength="100" stroke="url(#gGrad)" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                        <b>—</b>
+                      </div>
+                      <div class="hub__pillars">
+                        <strong>Glow Score</strong>
+                        <span>Skin — add with your first scan</span>
+                        <span>Fitness — add with your steps</span>
+                        <span>Sleep · Hydration — log it today</span>
+                      </div>
                     </div>
-                    <div class="ui__card">
-                      <span class="ui__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 4c3.9 0 7 3.1 7 7 0 4.6-3.6 9-7 9s-7-4.4-7-9c0-3.9 3.1-7 7-7Z" stroke="#0A0A0A" stroke-width="1.6"/><path d="M9.2 14.6c1.6 1.2 4 1.2 5.6 0" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round"/></svg></span>
-                      <div><strong>Face yoga · Jaw</strong><span>Guided · 5 min</span></div>
-                      <i class="ui__check"></i>
+                    <div class="hub__card hub__scan">
+                      <div><strong>Weekly AI Vision</strong><span>Ready to scan: Skin · Face · Body</span></div>
+                      <span class="hub__pill">Scan</span>
                     </div>
+                    <div class="hub__habits">
+                      <span><svg viewBox="0 0 16 16" fill="none"><path d="M8 2s4 4.3 4 7.2A4 4 0 0 1 8 13a4 4 0 0 1-4-3.8C4 6.3 8 2 8 2Z" stroke="currentColor" stroke-width="1.3"/></svg>Water</span>
+                      <span><svg viewBox="0 0 16 16" fill="none"><path d="M5.5 2.5c1.2 0 1.8 1.4 1.6 3-.2 1.4-1 2.3-2 2.3S3.6 6.7 3.7 5.2c.1-1.5.7-2.7 1.8-2.7ZM4 10h3v1.6a1.5 1.5 0 0 1-3 0V10Zm6.5-6.5c1.1 0 1.7 1.2 1.8 2.7.1 1.5-.6 2.6-1.4 2.6s-1.8-.9-2-2.3c-.2-1.6.4-3 1.6-3ZM9 11h3v1.6a1.5 1.5 0 0 1-3 0V11Z" stroke="currentColor" stroke-width="1.1"/></svg>Steps</span>
+                      <span><svg viewBox="0 0 16 16" fill="none"><path d="M12.8 9.6A5.2 5.2 0 1 1 6.4 3.2a4.2 4.2 0 0 0 6.4 6.4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Sleep</span>
+                    </div>
+                    <div class="hub__mission-h"><strong>Today's Mission</strong><span>Day 1</span></div>
+                    <div class="hub__task is-done"><i class="ui__check is-done"></i><div><strong>Morning skincare routine</strong><span>Morning · 4 min</span></div></div>
+                    <div class="hub__task"><i class="ui__check"></i><div><strong>15 min movement</strong><span>Midday · 15 min</span></div></div>
+                    <div class="hub__task"><i class="ui__check"></i><div><strong>Drink 2 L water</strong><span>Anytime</span></div></div>
+                    <div class="hub__task"><i class="ui__check"></i><div><strong>5 min mindfulness</strong><span>Evening · 5 min</span></div></div>
                     <div class="ui__nav"><i></i><i></i><i></i><i></i></div>
                   </div>
                 </div>
@@ -417,7 +434,7 @@
             </div>
             <div class="chart" aria-hidden="true">
               <div class="chart__panel">
-                <div class="chart__top"><span>Glow score · 8 weeks</span><span><b>82</b><em>+9</em></span></div>
+                <div class="chart__top"><span class="chart__title">Glow Score Trend</span><span>Last 30 days</span></div>
                 <svg viewBox="0 0 400 120" fill="none" preserveAspectRatio="none">
                   <defs>
                     <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
@@ -433,10 +450,7 @@
                   <g stroke="rgba(64,44,28,.08)" stroke-width="1"><path d="M0 30H400M0 65H400M0 100H400"/></g>
                   <path d="M0 96 C40 92 60 88 100 84 S160 82 200 68 S260 60 300 46 S360 30 400 22 V120 H0 Z" fill="url(#area)"/>
                   <path class="chart__line" pathLength="1" d="M0 96 C40 92 60 88 100 84 S160 82 200 68 S260 60 300 46 S360 30 400 22" stroke="url(#stroke)" stroke-width="3" stroke-linecap="round"/>
-                  <circle cx="400" cy="22" r="5" fill="#EE8A72"/>
-                  <circle cx="400" cy="22" r="10" fill="#EE8A72" fill-opacity=".18"/>
                 </svg>
-                <div class="chart__x"><span>Wk 1</span><span>Wk 4</span><span>Wk 8</span></div>
               </div>
             </div>
           </article>
@@ -444,8 +458,51 @@
       </div>
     </section>
 
+    <!-- ============ THE RESULTS ============ -->
+    <section class="section bg-paper results" id="results" aria-labelledby="results-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow eyebrow--num"><span class="sec-num" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none"><circle class="sec-num__track" cx="15" cy="15" r="13.5" stroke-width="1"/><circle class="sec-num__fill" cx="15" cy="15" r="13.5" pathLength="100" stroke="url(#gGrad)" stroke-width="1.5" stroke-linecap="round"/></svg>04</span>The results</span>
+          <h2 class="h2" id="results-title">What changes when you start.</h2>
+          <p class="lead">We won't promise you a new face. We promise something better: a plan, a rhythm and an honest view of your progress — every single day.</p>
+        </div>
+
+        <ol class="promises">
+          <li class="promise" data-reveal style="--d:0ms">
+            <span class="promise__ring" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="rgba(64,44,28,.12)" stroke-width="1.2"/><circle class="promise__arc" cx="22" cy="22" r="20" pathLength="100" stroke="url(#gGrad)" stroke-width="2" stroke-linecap="round"/><path d="M15.5 22.5l4.2 4.2 8.8-9.4" stroke="#A44E31" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="promise__k">Clarity</span>
+            <h3 class="h3">A plan every morning.</h3>
+            <p>Open Glovia and today is already decided — your mission, your routine, your timing. No guessing, no endless scrolling.</p>
+          </li>
+          <li class="promise" data-reveal style="--d:120ms">
+            <span class="promise__ring" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="rgba(64,44,28,.12)" stroke-width="1.2"/><circle class="promise__arc" cx="22" cy="22" r="20" pathLength="100" stroke="url(#gGrad)" stroke-width="2" stroke-linecap="round"/><path d="M15.5 22.5l4.2 4.2 8.8-9.4" stroke="#A44E31" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="promise__k">Productivity</span>
+            <h3 class="h3">Minutes, not hours.</h3>
+            <p>Every mission is built from short, timed steps: a 4-minute routine, 15 minutes of movement, 5 minutes to breathe. Self-care that fits a real calendar.</p>
+          </li>
+          <li class="promise" data-reveal style="--d:240ms">
+            <span class="promise__ring" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="rgba(64,44,28,.12)" stroke-width="1.2"/><circle class="promise__arc" cx="22" cy="22" r="20" pathLength="100" stroke="url(#gGrad)" stroke-width="2" stroke-linecap="round"/><path d="M15.5 22.5l4.2 4.2 8.8-9.4" stroke="#A44E31" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="promise__k">Consistency</span>
+            <h3 class="h3">Habits that stick.</h3>
+            <p>Streaks, levels and gentle daily reminders turn good intentions into a rhythm you actually keep.</p>
+          </li>
+          <li class="promise" data-reveal style="--d:360ms">
+            <span class="promise__ring" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="rgba(64,44,28,.12)" stroke-width="1.2"/><circle class="promise__arc" cx="22" cy="22" r="20" pathLength="100" stroke="url(#gGrad)" stroke-width="2" stroke-linecap="round"/><path d="M15.5 22.5l4.2 4.2 8.8-9.4" stroke="#A44E31" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="promise__k">Visible progress</span>
+            <h3 class="h3">Progress you can see.</h3>
+            <p>A weekly AI scan and your 30-day Glow Score trend show how far you've come — measured, not guessed.</p>
+          </li>
+        </ol>
+
+        <div class="pledge" data-reveal style="--d:200ms">
+          <p class="pledge__text">Less time deciding. <span class="grad-text">More time glowing.</span></p>
+          <p class="pledge__sub">Give us a few minutes a day — we'll give you a clear plan and an honest picture of where you're growing.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ 5. PHILOSOPHY ============ -->
-    <section class="philo bg-paper" id="philosophy" aria-labelledby="philo-title" data-philo>
+    <section class="philo bg-cream grain" id="philosophy" aria-labelledby="philo-title" data-philo>
       <div class="philo__stage">
         <div class="philo__warm" aria-hidden="true"></div>
         <div class="aura" aria-hidden="true">
@@ -455,7 +512,7 @@
           <div class="ring" style="--r:98%;--o:.18;--t:150s;--w:1px"></div>
         </div>
         <div class="container philo__inner">
-          <span class="eyebrow eyebrow--num" data-reveal><span class="sec-num" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none"><circle class="sec-num__track" cx="15" cy="15" r="13.5" stroke-width="1"/><circle class="sec-num__fill" cx="15" cy="15" r="13.5" pathLength="100" stroke="url(#gGrad)" stroke-width="1.5" stroke-linecap="round"/></svg>04</span>Our philosophy</span>
+          <span class="eyebrow eyebrow--num" data-reveal><span class="sec-num" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none"><circle class="sec-num__track" cx="15" cy="15" r="13.5" stroke-width="1"/><circle class="sec-num__fill" cx="15" cy="15" r="13.5" pathLength="100" stroke="url(#gGrad)" stroke-width="1.5" stroke-linecap="round"/></svg>05</span>Our philosophy</span>
           <h2 class="philo__title" id="philo-title">
             <span class="pw pw--1">Care,</span>
             <span class="pw pw--2">not <span class="grad-text">judgment.</span></span>
@@ -470,10 +527,10 @@
     </section>
 
     <!-- ============ FAQ ============ -->
-    <section class="section bg-cream grain" id="faq" aria-labelledby="faq-title">
+    <section class="section bg-paper" id="faq" aria-labelledby="faq-title">
       <div class="container">
         <div class="section-head section-head--center" data-reveal>
-          <span class="eyebrow eyebrow--num"><span class="sec-num" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none"><circle class="sec-num__track" cx="15" cy="15" r="13.5" stroke-width="1"/><circle class="sec-num__fill" cx="15" cy="15" r="13.5" pathLength="100" stroke="url(#gGrad)" stroke-width="1.5" stroke-linecap="round"/></svg>05</span>Honest answers</span>
+          <span class="eyebrow eyebrow--num"><span class="sec-num" aria-hidden="true"><svg viewBox="0 0 30 30" fill="none"><circle class="sec-num__track" cx="15" cy="15" r="13.5" stroke-width="1"/><circle class="sec-num__fill" cx="15" cy="15" r="13.5" pathLength="100" stroke="url(#gGrad)" stroke-width="1.5" stroke-linecap="round"/></svg>06</span>Honest answers</span>
           <h2 class="h2" id="faq-title">Straight from us.</h2>
         </div>
 
@@ -509,6 +566,36 @@
             </div></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============ START NOW ============ -->
+    <section class="start" id="start" aria-labelledby="start-title">
+      <div class="start__ring" aria-hidden="true"></div>
+      <div class="container start__inner">
+        <span class="eyebrow start__eyebrow" data-reveal>Why wait?</span>
+        <h2 class="start__title" id="start-title" data-reveal style="--d:80ms">Don't wait for the New Year. <span class="start__accent">Start now.</span></h2>
+        <p class="start__lead" data-reveal style="--d:180ms">Not on January 1st. Not next Monday. Glovia lands soon — but your first step doesn't have to wait: a glass of water, a ten-minute walk, an earlier night.</p>
+
+        <figure class="quotes" data-quotes data-reveal style="--d:280ms">
+          <div class="quotes__stage">
+            <blockquote class="quote is-active" data-quote><p>“You don't need a new year. You need a next step.”</p></blockquote>
+            <blockquote class="quote" data-quote><p>“Five minutes today beats a perfect plan for Monday.”</p></blockquote>
+            <blockquote class="quote" data-quote><p>“Small steps, every day, add up to a glow no one can fake.”</p></blockquote>
+            <blockquote class="quote" data-quote><p>“Consistency is a quiet kind of self-respect.”</p></blockquote>
+            <blockquote class="quote" data-quote><p>“The best time to start was yesterday. The next best is right now.”</p></blockquote>
+            <blockquote class="quote" data-quote><p>“Be kind to yourself — and then begin.”</p></blockquote>
+          </div>
+          <figcaption class="quotes__by">— words to keep, from the Glovia team</figcaption>
+          <div class="quotes__dots">
+            <button class="quotes__dot is-active" type="button" aria-label="Show quote 1" aria-current="true"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="rgba(250,246,239,.25)" stroke-width="1.2"/><circle class="quotes__fill" cx="10" cy="10" r="8" pathLength="100" stroke="#F4A08A" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+            <button class="quotes__dot" type="button" aria-label="Show quote 2"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="rgba(250,246,239,.25)" stroke-width="1.2"/><circle class="quotes__fill" cx="10" cy="10" r="8" pathLength="100" stroke="#F4A08A" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+            <button class="quotes__dot" type="button" aria-label="Show quote 3"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="rgba(250,246,239,.25)" stroke-width="1.2"/><circle class="quotes__fill" cx="10" cy="10" r="8" pathLength="100" stroke="#F4A08A" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+            <button class="quotes__dot" type="button" aria-label="Show quote 4"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="rgba(250,246,239,.25)" stroke-width="1.2"/><circle class="quotes__fill" cx="10" cy="10" r="8" pathLength="100" stroke="#F4A08A" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+            <button class="quotes__dot" type="button" aria-label="Show quote 5"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="rgba(250,246,239,.25)" stroke-width="1.2"/><circle class="quotes__fill" cx="10" cy="10" r="8" pathLength="100" stroke="#F4A08A" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+            <button class="quotes__dot" type="button" aria-label="Show quote 6"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="rgba(250,246,239,.25)" stroke-width="1.2"/><circle class="quotes__fill" cx="10" cy="10" r="8" pathLength="100" stroke="#F4A08A" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+          </div>
+        </figure>
       </div>
     </section>
 
@@ -566,6 +653,7 @@
               <li><a href="#how">How it works</a></li>
               <li><a href="#scan">The scan</a></li>
               <li><a href="#inside">Inside Glovia</a></li>
+              <li><a href="#results">The results</a></li>
               <li><a href="#faq">Honest answers</a></li>
             </ul>
           </nav>

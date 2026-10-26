@@ -44,6 +44,37 @@
   once($$('[data-reveal]'), 'is-in', { rootMargin: '0px 0px -10% 0px', threshold: 0.12 });
   once($$('[data-live]'), 'is-live', { threshold: 0.45 });
 
+  // ---------- The hero dashboard speaks in the visitor's own day ----------
+  var now = new Date(), h = now.getHours();
+  var greet = h >= 5 && h < 12 ? 'Good morning' : h >= 12 && h < 17 ? 'Good afternoon' : h >= 17 && h < 22 ? 'Good evening' : 'Hi';
+  $$('[data-greeting]').forEach(function (el) { el.textContent = greet; });
+  try {
+    var day = now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' });
+    $$('[data-today]').forEach(function (el) { el.textContent = day; });
+  } catch (e) { /* keep the static label */ }
+
+  // ---------- Quotes: dots are mini rings; the active one fills, then the next quote arrives ----------
+  $$('[data-quotes]').forEach(function (box) {
+    var quotes = $$('[data-quote]', box), dots = $$('.quotes__dot', box), i = 0;
+    var show = function (n) {
+      i = (n + quotes.length) % quotes.length;
+      quotes.forEach(function (q, k) { q.classList.toggle('is-active', k === i); });
+      dots.forEach(function (d, k) {
+        d.classList.toggle('is-active', k === i);
+        if (k === i) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current');
+      });
+    };
+    dots.forEach(function (d, k) { d.addEventListener('click', function () { show(k); }); });
+    if (reduce) return;
+    // Autoplay only while the band is on screen; the ring animation is the timer.
+    box.addEventListener('animationend', function (e) {
+      if (e.target.classList && e.target.classList.contains('quotes__fill')) show(i + 1);
+    });
+    if (hasIO) {
+      new IntersectionObserver(function (en) { box.classList.toggle('is-auto', en[0].isIntersecting); }, { threshold: 0.4 }).observe(box);
+    }
+  });
+
   // ---------- Count-up stats ----------
   var counters = $$('[data-count]');
   if (hasIO && !reduce) {

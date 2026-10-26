@@ -1030,3 +1030,158 @@ button { font: inherit; color: inherit; }
 @supports (content-visibility: auto) {
   #scan, #inside, #faq, .invite, .footer { content-visibility: auto; contain-intrinsic-size: auto 1000px; }
 }
+
+/* ==========================================================================
+   v4 — real dashboard, results, start now
+   ========================================================================== */
+
+/* ---------- Hero phone: the Glow Hub on day one ---------- */
+.ui.hub { padding: 13.5% 6.5% 6%; gap: 2.2%; font-size: calc(var(--pw) * .036); text-align: left; }
+.hub__bar { display: flex; justify-content: space-between; }
+.hub__chip {
+  display: inline-flex; align-items: center; gap: .35em;
+  padding: .3em .7em; border-radius: 999px;
+  background: #FFFDF9; box-shadow: 0 1px 2px rgba(70, 44, 24, .06);
+  font-size: .86em; font-weight: 600;
+}
+.hub__chip svg { width: 1.05em; height: 1.05em; }
+.hub__hello { display: grid; gap: .15em; }
+.hub__date { font-size: .82em; color: var(--muted); }
+.hub__greet { font-family: var(--serif); font-size: 1.75em; font-weight: 500; line-height: 1.1; letter-spacing: -.02em; }
+.hub__sub { font-size: .86em; color: var(--muted); }
+.hub__card {
+  border-radius: 1.2em; background: #FFFDF9; padding: .85em .9em;
+  box-shadow: 0 1px 2px rgba(70, 44, 24, .05), 0 6px 16px -8px rgba(70, 44, 24, .14);
+}
+.hub__score { display: flex; align-items: center; gap: .85em; }
+.hub__gauge { position: relative; width: 4.6em; aspect-ratio: 1; flex: none; display: grid; place-items: center; }
+.hub__gauge b { position: relative; font-family: var(--serif); font-weight: 500; font-size: 1.5em; color: var(--muted); }
+.hub__gauge-arc { stroke-dashoffset: 0; opacity: .35; }
+.hub__pillars { display: grid; gap: .2em; min-width: 0; }
+.hub__pillars strong { font-weight: 600; font-size: .95em; }
+.hub__pillars span { font-size: .76em; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hub__scan { display: flex; align-items: center; justify-content: space-between; gap: .6em; }
+.hub__scan strong { display: block; font-weight: 600; font-size: .95em; }
+.hub__scan span { display: block; font-size: .78em; color: var(--muted); }
+.hub__pill {
+  flex: none; padding: .45em 1em; border-radius: 999px;
+  background: var(--ink); color: var(--cream) !important; font-size: .82em !important; font-weight: 600;
+}
+.hub__habits { display: grid; grid-template-columns: repeat(3, 1fr); gap: .45em; }
+.hub__habits span {
+  display: flex; align-items: center; justify-content: center; gap: .35em;
+  padding: .55em .3em; border-radius: .9em; background: rgba(255, 253, 249, .8);
+  box-shadow: inset 0 0 0 1px rgba(64, 44, 28, .08);
+  font-size: .8em; font-weight: 600; color: var(--ink-2);
+}
+.hub__habits svg { width: 1.1em; height: 1.1em; color: var(--coral-strong); }
+.hub__mission-h { display: flex; align-items: baseline; justify-content: space-between; margin-top: 1%; }
+.hub__mission-h strong { font-family: var(--serif); font-weight: 500; font-size: 1.15em; letter-spacing: -.01em; }
+.hub__mission-h span { font-size: .78em; font-weight: 600; color: var(--accent-ink); }
+.hub__task {
+  display: flex; align-items: center; gap: .7em;
+  padding: .6em .8em; border-radius: 1em; background: #FFFDF9;
+  box-shadow: 0 1px 2px rgba(70, 44, 24, .05);
+}
+.hub__task div { min-width: 0; }
+.hub__task strong { display: block; font-weight: 600; font-size: .9em; }
+.hub__task span { display: block; font-size: .76em; color: var(--muted); }
+.hub__task.is-done strong { color: var(--muted); text-decoration: line-through; text-decoration-color: rgba(238, 138, 114, .7); }
+.ui.hub .ui__nav { margin-top: auto; }
+
+/* Progress card: a shape, not a fake number */
+.chart__title { font-family: var(--serif); font-size: 1.125rem; color: var(--ink); letter-spacing: -.01em; }
+
+/* ---------- The results ---------- */
+.promises { margin-top: clamp(3rem, 2rem + 3vw, 5rem); display: grid; gap: 1.25rem; }
+.promise {
+  position: relative; display: grid; gap: .6rem; align-content: start;
+  padding: clamp(1.5rem, 1.1rem + 1.4vw, 2.25rem);
+  border-radius: var(--radius);
+  background: rgba(250, 246, 239, .7);
+  box-shadow: inset 0 0 0 1px var(--line), var(--shadow-1);
+  transition: transform var(--dur-hover) var(--ease-soft), box-shadow var(--dur-hover) var(--ease-soft);
+}
+.promise:hover { transform: translateY(-4px); box-shadow: inset 0 0 0 1px var(--line), var(--shadow-2); }
+.promise__ring { width: 44px; height: 44px; margin-bottom: .5rem; }
+.promise__ring svg { width: 100%; height: 100%; transform: rotate(-90deg); overflow: visible; }
+.promise__ring path { transform: rotate(90deg); transform-origin: 22px 22px; }
+.promise__arc { stroke-dasharray: 100; stroke-dashoffset: 0; }
+.promise__k { font-size: var(--fs-eyebrow); font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-ink); }
+.promise p { color: var(--ink-2); }
+@media (min-width: 720px) { .promises { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
+@media (min-width: 1100px) { .promises { grid-template-columns: repeat(4, 1fr); } }
+
+.pledge {
+  margin-top: clamp(3rem, 2rem + 3vw, 4.5rem); padding-top: clamp(2rem, 1.5rem + 2vw, 3rem);
+  border-top: 1px solid var(--line); text-align: center; display: grid; gap: .9rem; justify-items: center;
+}
+.pledge__text { font-family: var(--serif); font-size: clamp(1.75rem, 1.2rem + 2.4vw, 3.25rem); font-weight: 500; line-height: 1.1; letter-spacing: -.02em; }
+.pledge__sub { color: var(--ink-2); max-width: 36rem; font-size: var(--fs-lead); }
+
+/* ---------- Start now (dark band) ---------- */
+.start {
+  position: relative; isolation: isolate; overflow: clip;
+  background: #16130F; color: #FAF6EF;
+  padding-block: clamp(5rem, 3rem + 8vw, 9rem);
+  text-align: center;
+}
+.start__ring {
+  position: absolute; left: 50%; top: 50%; z-index: -1; pointer-events: none;
+  width: min(900px, 160vw); aspect-ratio: 1; transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background:
+    radial-gradient(closest-side, rgba(22, 19, 15, 1) 95%, rgba(22, 19, 15, 0) 96.2%),
+    conic-gradient(from 200deg, rgba(232, 213, 183, 0), rgba(238, 138, 114, .7), rgba(232, 213, 183, .45), rgba(232, 213, 183, 0) 75%);
+  opacity: .85;
+}
+.start__ring::after {
+  content: ""; position: absolute; inset: 20%; border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(238, 138, 114, .16), rgba(238, 138, 114, 0));
+}
+.start__inner { display: grid; gap: 1.5rem; justify-items: center; }
+.start__eyebrow { color: #F4A08A; }
+.start__title {
+  font-family: var(--serif); font-weight: 500;
+  font-size: clamp(2.5rem, 1.2rem + 5.2vw, 6rem); line-height: 1.02; letter-spacing: -.03em;
+  max-width: 14ch;
+}
+.start__accent { display: block; background: linear-gradient(120deg, #F7B9A6, #EE8A72 55%, #E8D5B7); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.start__lead { color: rgba(250, 246, 239, .78); max-width: 38rem; font-size: var(--fs-lead); }
+
+.quotes { margin: clamp(2rem, 1.5rem + 2vw, 3rem) 0 0; width: 100%; max-width: 46rem; display: grid; gap: 1.25rem; justify-items: center; }
+.quotes__stage { display: grid; width: 100%; }
+.quote {
+  grid-area: 1 / 1; margin: 0;
+  font-family: var(--serif-italic); font-style: italic; font-weight: 400;
+  font-size: clamp(1.5rem, 1.1rem + 1.8vw, 2.5rem); line-height: 1.25; letter-spacing: -.01em;
+  color: #FAF6EF;
+  opacity: 0; transform: translateY(10px);
+  transition: opacity .9s var(--ease-soft), transform 1s var(--ease-out);
+}
+.quote.is-active { opacity: 1; transform: none; }
+.quote p { margin: 0; }
+.quotes__by { font-size: var(--fs-small); color: rgba(250, 246, 239, .6); }
+.quotes__dots { display: flex; gap: .35rem; }
+.quotes__dot {
+  width: 44px; height: 44px; padding: 12px; border: 0; background: none; cursor: pointer; border-radius: 50%;
+}
+.quotes__dot svg { width: 100%; height: 100%; transform: rotate(-90deg); overflow: visible; }
+.quotes__fill { stroke-dasharray: 100; stroke-dashoffset: 100; }
+.quotes__dot.is-active .quotes__fill { stroke-dashoffset: 0; }
+.quotes__dot:focus-visible { outline-color: #F4A08A; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .js [data-reveal] .promise__arc, .js .promise[data-reveal] .promise__arc { stroke-dashoffset: 100; transition: stroke-dashoffset 1.2s var(--ease-out) calc(var(--d, 0ms) + 300ms); }
+  .js .promise[data-reveal].is-in .promise__arc { stroke-dashoffset: 0; }
+  .hub__gauge-arc { animation: draw 1.4s var(--ease-out) .3s both; }
+  /* Autoplay: the active dot's ring fills, then the next quote takes over */
+  .js .quotes.is-auto .quotes__dot.is-active .quotes__fill { animation: quote-fill 6.5s linear both; }
+  .js .quotes.is-auto:hover .quotes__dot.is-active .quotes__fill,
+  .js .quotes.is-auto:focus-within .quotes__dot.is-active .quotes__fill { animation-play-state: paused; }
+}
+@keyframes quote-fill { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+
+@supports (content-visibility: auto) {
+  #results, .start { content-visibility: auto; contain-intrinsic-size: auto 1000px; }
+}
