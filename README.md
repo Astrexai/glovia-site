@@ -1,6 +1,6 @@
 # glovia-site
 
-Landing page for **Glovia** — your AI self-care companion. Live at https://astrexai.github.io/glovia-site/
+Landing page for **Glovia** — your AI self-care companion. Live at https://gloviawellness.com/
 
 Plain HTML/CSS/vanilla JS, served by GitHub Pages from `main`.
 
