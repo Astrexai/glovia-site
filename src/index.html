@@ -127,52 +127,60 @@
 
           <div class="parallax" data-parallax="-0.12">
             <div class="float">
-              <div class="phone" role="img" aria-label="Glovia's home screen on day one: today's mission, your habits and a prompt for your first scan">
+              <div class="phone" role="img" aria-label="Glovia's home screen: a 6-day streak, a Glow Score of 44 with skin and fitness pillars, and the weekly AI scan ready">
                 <div class="phone__screen">
                   <div class="phone__island"></div>
                   <!-- Real screenshot goes here:
                        <img class="phone__shot" src="assets/img/screen-home.webp" alt="" width="1179" height="2556"> -->
-                  <div class="ui hub" aria-hidden="true">
-                    <div class="ui__status"><span>9:41</span><i></i></div>
-                    <div class="hub__bar">
-                      <span class="hub__chip"><svg viewBox="0 0 16 16" fill="none"><path d="M8 1.5c.4 2.2 3.6 3.6 3.6 7.1A3.6 3.6 0 0 1 8 12.2a3.6 3.6 0 0 1-3.6-3.6c0-1.6.9-2.6 1.6-3.3.1 1.2.7 1.9 1.4 2.1C7.2 5.5 7.4 3.4 8 1.5Z" fill="#EE8A72"/></svg>Day 1</span>
-                      <span class="hub__chip">Level 1</span>
+                  <div class="hub2" aria-hidden="true">
+                    <div class="h2-status"><span>9:41</span><span class="h2-status__icons"><i class="h2-bars"></i><i class="h2-batt"></i></span></div>
+
+                    <div class="h2-streak">
+                      <span class="h2-streak__l"><svg class="h2-flame" viewBox="0 0 24 24"><defs><linearGradient id="fl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB547"/><stop offset="1" stop-color="#F0592B"/></linearGradient></defs><path d="M12 2c.6 3.4 5.4 5.4 5.4 10.7A5.4 5.4 0 0 1 12 18.2a5.4 5.4 0 0 1-5.4-5.5c0-2.4 1.3-3.9 2.4-5 .2 1.8 1 2.8 2.1 3.1C10.8 8.3 11.1 5 12 2Z" fill="url(#fl)"/></svg>6 days<svg class="h2-flame h2-flame--sm" viewBox="0 0 24 24"><path d="M12 2c.6 3.4 5.4 5.4 5.4 10.7A5.4 5.4 0 0 1 12 18.2a5.4 5.4 0 0 1-5.4-5.5c0-2.4 1.3-3.9 2.4-5 .2 1.8 1 2.8 2.1 3.1C10.8 8.3 11.1 5 12 2Z" fill="url(#fl)"/></svg></span>
+                      <span class="h2-streak__r">Level 5<i class="h2-xp"><b></b></i></span>
                     </div>
-                    <div class="hub__hello">
-                      <span class="hub__date" data-today>Today</span>
-                      <span class="hub__greet" data-greeting>Good morning</span>
-                      <span class="hub__sub">Let's check in with your wellness today</span>
-                    </div>
-                    <div class="hub__card hub__score">
-                      <div class="hub__gauge">
-                        <svg class="ui__ring" viewBox="0 0 100 100" fill="none">
-                          <circle class="ui__ring-track" cx="50" cy="50" r="44" stroke-width="7"/>
-                          <circle class="ui__ring-arc hub__gauge-arc" cx="50" cy="50" r="44" pathLength="100" stroke="url(#gGrad)" stroke-width="7" stroke-linecap="round"/>
-                        </svg>
-                        <b>—</b>
+
+                    <span class="h2-date" data-today>Monday, 26 October</span>
+                    <span class="h2-greet" data-greeting>Good afternoon</span>
+                    <span class="h2-sub">Let's check in with your wellness today</span>
+                    <span class="h2-avatar"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.5" r="3.6" stroke="#0A0A0A" stroke-width="1.6"/><path d="M5 19.5c.9-3.2 3.6-5 7-5s6.1 1.8 7 5" stroke="#0A0A0A" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+
+                    <div class="h2-score">
+                      <svg class="h2-ring" viewBox="0 0 280 280" fill="none">
+                        <defs><linearGradient id="arcG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EEDDBF"/><stop offset="1" stop-color="#E7A99F"/></linearGradient></defs>
+                        <circle cx="140" cy="140" r="126" stroke="rgba(255,250,242,.65)" stroke-width="22"/>
+                        <circle class="h2-ring__arc" cx="140" cy="140" r="126" pathLength="100" stroke="url(#arcG)" stroke-width="22" stroke-linecap="round" transform="rotate(-90 140 140)"/>
+                      </svg>
+                      <span class="h2-score__label">Glow Score</span>
+                      <span class="h2-score__num">44</span>
+                      <span class="h2-score__delta">+1 from yesterday</span>
+                      <div class="h2-pillars">
+                        <span>Skin</span><i class="h2-pbar"><b style="width:63%"></b></i><strong>63</strong><em class="up">+2</em>
+                        <span>Fitness</span><i class="h2-pbar"><b style="width:60%"></b></i><strong>60</strong><em>0</em>
                       </div>
-                      <div class="hub__pillars">
-                        <strong>Glow Score</strong>
-                        <span>Skin — add with your first scan</span>
-                        <span>Fitness — add with your steps</span>
-                        <span>Sleep · Hydration — log it today</span>
-                      </div>
+                      <span class="h2-log"><i>+</i>Sleep · Hydration — log it today</span>
                     </div>
-                    <div class="hub__card hub__scan">
-                      <div><strong>Weekly AI Vision</strong><span>Ready to scan: Skin · Face · Body</span></div>
-                      <span class="hub__pill">Scan</span>
+
+                    <div class="h2-vision">
+                      <div><strong>Weekly AI Vision</strong><span>Ready to scan: Skin, Body</span></div>
+                      <span class="h2-scanbtn"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2" stroke="#EE8A72" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#EE8A72" stroke-width="2"/></svg>Scan</span>
                     </div>
-                    <div class="hub__habits">
-                      <span><svg viewBox="0 0 16 16" fill="none"><path d="M8 2s4 4.3 4 7.2A4 4 0 0 1 8 13a4 4 0 0 1-4-3.8C4 6.3 8 2 8 2Z" stroke="currentColor" stroke-width="1.3"/></svg>Water</span>
-                      <span><svg viewBox="0 0 16 16" fill="none"><path d="M5.5 2.5c1.2 0 1.8 1.4 1.6 3-.2 1.4-1 2.3-2 2.3S3.6 6.7 3.7 5.2c.1-1.5.7-2.7 1.8-2.7ZM4 10h3v1.6a1.5 1.5 0 0 1-3 0V10Zm6.5-6.5c1.1 0 1.7 1.2 1.8 2.7.1 1.5-.6 2.6-1.4 2.6s-1.8-.9-2-2.3c-.2-1.6.4-3 1.6-3ZM9 11h3v1.6a1.5 1.5 0 0 1-3 0V11Z" stroke="currentColor" stroke-width="1.1"/></svg>Steps</span>
-                      <span><svg viewBox="0 0 16 16" fill="none"><path d="M12.8 9.6A5.2 5.2 0 1 1 6.4 3.2a4.2 4.2 0 0 0 6.4 6.4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>Sleep</span>
+
+                    <span class="h2-scans"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 3 7-8" stroke="#3D3833" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 3v3M16.5 4.5h3M21 9v2M20 10h2" stroke="#3D3833" stroke-width="1.3" stroke-linecap="round"/></svg>2 scans this month</span>
+
+                    <div class="h2-mission">
+                      <span class="h2-mission__t">Today's Mission</span>
+                      <div class="h2-task"><i></i><div><strong>Morning skincare routine</strong><span>Morning · 4 min</span></div></div>
+                      <div class="h2-task"><i></i><div><strong>15 min movement</strong><span>Midday · 15 min</span></div></div>
                     </div>
-                    <div class="hub__mission-h"><strong>Today's Mission</strong><span>Day 1</span></div>
-                    <div class="hub__task is-done"><i class="ui__check is-done"></i><div><strong>Morning skincare routine</strong><span>Morning · 4 min</span></div></div>
-                    <div class="hub__task"><i class="ui__check"></i><div><strong>15 min movement</strong><span>Midday · 15 min</span></div></div>
-                    <div class="hub__task"><i class="ui__check"></i><div><strong>Drink 2 L water</strong><span>Anytime</span></div></div>
-                    <div class="hub__task"><i class="ui__check"></i><div><strong>5 min mindfulness</strong><span>Evening · 5 min</span></div></div>
-                    <div class="ui__nav"><i></i><i></i><i></i><i></i></div>
+
+                    <nav class="h2-nav">
+                      <span class="is-active"><svg viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V20h-5v-5h-6v5H4z" fill="#EE9A86"/></svg>Home</span>
+                      <span><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l5-5 4 3 7-8" stroke="#3D3833" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 3v3M16.5 4.5h3" stroke="#3D3833" stroke-width="1.4" stroke-linecap="round"/></svg>Insights</span>
+                      <span class="h2-nav__scan"><b><svg viewBox="0 0 24 24" fill="none"><path d="M4 8V6a2 2 0 0 1 2-2h2M16 4h2a2 2 0 0 1 2 2v2M20 16v2a2 2 0 0 1-2 2h-2M8 20H6a2 2 0 0 1-2-2v-2" stroke="#EE8A72" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="#EE8A72" stroke-width="2"/></svg></b>Scan</span>
+                      <span><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="15" rx="2" stroke="#3D3833" stroke-width="1.7"/><path d="M8 3v4M16 3v4M4 10h16M9 15l2 2 4-4" stroke="#3D3833" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Routine</span>
+                      <span><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8.5" r="3.6" stroke="#3D3833" stroke-width="1.7"/><path d="M5 19.5c.9-3.2 3.6-5 7-5s6.1 1.8 7 5" stroke="#3D3833" stroke-width="1.7" stroke-linecap="round"/></svg>Profile</span>
+                    </nav>
                   </div>
                 </div>
               </div>
